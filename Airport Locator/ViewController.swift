@@ -101,7 +101,6 @@ extension ViewController: MKMapViewDelegate {
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
             view.rightCalloutAccessoryView = UIButton(type: .roundedRect)
-            view.image = UIImage(named: "image.png")
         }
         return view
     }
