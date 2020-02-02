@@ -48,8 +48,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     //MARK: - Service call methods
     private func ServiceCallGetLocation(withcurrentLocation latitude : Double , longitude : Double){
-        //   loader.startAnimating()
-        let strUrl = String(format: "%@location=%f,%f%@", APIURL.BASEURL,latitude,longitude,APIURL.TOP_HEADLINES)
+        let strUrl = String(format: "%@location=%f,%f%@", APIURL.BASEURL,latitude,longitude,APIURL.Params)
         APIManager.sharedInstance.getRequestAPI(url: strUrl) { (airports, error) in
             if let error = error {
                 print("Get data error: \(error.localizedDescription)")
