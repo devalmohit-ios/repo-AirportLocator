@@ -42,6 +42,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         strLongitude = locations[0].coordinate.longitude
         ServiceCallGetLocation(withcurrentLocation: strLatitude ?? 0.0, longitude: strLongitude ?? 0.0)
         manager.stopUpdatingLocation()
+        print("Mohit")
     }
     
     
